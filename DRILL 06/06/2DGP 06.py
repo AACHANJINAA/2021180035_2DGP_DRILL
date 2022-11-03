@@ -10,38 +10,38 @@ q = 400
 w = 90
 
 def move_rect(x, y):
-         
     while (x < 750):
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
         x += 2
-        delay(0.01)
+        delay(0.007)
         
     while (y < 550):
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
         y += 2
-        delay(0.01)
+        delay(0.007)
           
     while (x > 50):
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
         x -= 2
-        delay(0.01)
+        delay(0.007)
 
     while (y >= 90):
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
         y -= 2
-        delay(0.01)   
+        delay(0.007)   
 
 def move_circle(x, y):
      a = 0
      b = 0
+     cnt = 0
      while (1):
          if cnt <= 90:
              a += 3
